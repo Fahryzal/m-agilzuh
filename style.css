@@ -41,6 +41,7 @@ header {
 }
 header h2 {
   color: var(--six-color);
+  margin-right: -200px;
 }
 header nav ul div.shui {
   display: flex;
@@ -138,7 +139,6 @@ section .content .myphoto {
 }
 section .content .myphoto img {
   max-width: 350px;
-  margin-left: 125px;
   background: var(--six-color);
   clip-path: circle(50% at 50% 50%);
   transition: 0.6s;
@@ -226,6 +226,7 @@ section .content-aboutme {
   flex-direction: column;
   overflow: hidden;
   margin-left: 2rem;
+  padding: 0 10px;
   flex: 2;
 }
 section .content-aboutme .biodata-content h4 {
@@ -241,6 +242,10 @@ section .content-aboutme .biodata-content h4 {
   background-color: var(--third-color);
 }
 @media screen and (max-width: 767px) {
+  header h2 {
+    margin-right: -29px;
+  }
+
   body {
     flex-direction: column;
   }
@@ -410,7 +415,14 @@ a {
   background: var(--main-color);
   border-radius: 15px;
 }
+
+#CVS {
+  display: none;
+}
 @media only screen and (max-width: 768px) {
+  #CVS {
+    display: block;
+  }
   .Proyek {
     padding: 0;
   }
@@ -420,6 +432,9 @@ a {
   }
   .content-text p {
     font-size: 12px;
+  }
+  #CV {
+    display: none;
   }
 }
 
